@@ -36,7 +36,7 @@ enquiryForm?.addEventListener('submit', event => {
   const message = String(values.get('message') || '').trim();
   const subject = `SHEQ & ESG Consultancy Enquiry - ${name}`;
   const body = `Name: ${name}\nOrganisation: ${organisation}\nEmail: ${email}\nService: ${service}\n\nEnquiry:\n${message}`;
-  const recipient = 'dmunhungewarwa@gmail.com';
+  const recipient = 'dmunhungewarwa@outlook.com';
   const params = `subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   mailapp.href = `mailto:${recipient}?${params}`;
   gmail.href = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(recipient)}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
